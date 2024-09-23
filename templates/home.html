@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-Based Seller Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: transparent;
+        }
+
+        .navbar-left {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .navbar-left button {
+            transition: background-color 0.3s ease, border-radius 0.3s ease;
+            margin: 0 15px;
+            padding: 10px 20px;
+            color: white;
+            background-color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .navbar-left button:hover {
+            background-color: #218cb6;
+            border-radius: 80px;
+        }
+
+        .navbar-right button {
+            transition: background-color 0.3s ease, border-radius 0.3s ease;
+            padding: 10px 20px;
+            color: white;
+            background-color: #218cb6;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 20px;
+            width: 120px; /* Increase this value for more width */
+        }
+
+        .navbar-right button:hover {
+            background-color: white;
+            border-radius: 80px;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: calc(100vh - 60px); /* Adjust height to prevent overflow */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center text and buttons */
+            justify-content: center; /* Center vertically within the content */
+            text-align: center; /* Center text */
+            margin-left: 140px; /* Add margin to create gap from left border */
+            color: white;
+        }
+
+        .heading {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .explore-button {
+            transition: background-color 0.3s ease, border-radius 0.3s ease;
+            padding: 10px 20px;
+            color: white;
+            background-color: #218CB6;
+            border: none;
+            border-radius: 20%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .explore-button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center; /* Center the image */
+            flex: 1;
+            text-align: center; /* Center the image */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <button>Home</button>
+            <button>About</button>
+            <button>Contact Us</button>
+        </div>
+        <div class="navbar-right">
+            <button>Login</button>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <div class="container">
+        <!-- Left side content (centered vertically) -->
+        <div class="content">
+            <div class="heading"><h2>Voice-Based Real-time <br>Seller Simulation</h2></div>
+            <a class="explore-button" href="http://127.0.0.1:7860">EXPLORE</a>
+            
+        </div>
+
+        <!-- Right side image -->
+        <div class="image-container">
+            <img src="image.jpg" alt="Seller Simulation">
+        </div>
+    </div>
+
+</body>
+</html>
